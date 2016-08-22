@@ -1,0 +1,6 @@
+jsonpickle
+newspaper
+elasticsearch
+nltk
+certifi
+boto
