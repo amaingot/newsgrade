@@ -14,4 +14,5 @@ RUN git clone https://github.com/elelsee/aws-es-connection.git
 RUN cd aws-es-connection && python setup.py install
 RUN cd ..
 COPY . /code/
-CMD ["python", "ingest.py"]
+RUN python ingest.py
+#CMD ["python", "ingest.py"]
