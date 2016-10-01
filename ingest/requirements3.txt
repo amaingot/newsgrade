@@ -1,0 +1,2 @@
+jsonpickle
+newspaper3k
