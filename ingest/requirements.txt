@@ -1,6 +1,2 @@
 jsonpickle
-newspaper
-elasticsearch
-nltk
-certifi
-boto
+newspaper3k
