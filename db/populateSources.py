@@ -14,9 +14,7 @@ for source in newspaper.popular_urls():
         print source + " - " + soup.title.string
         cur = con.cursor()
 
-        cmd = 'INSERT INTO newsgrade.sources' + 
-            '(name, url, last_fetched, last_error, source_type, source_subtype, metadata)' +
-            'VALUES (' + soup.title.string + ', ' + source + ', NULL, NULL, "news", NULL,NULL);'
+        cmd = 'INSERT INTO newsgrade.sources' + '(name, url, last_fetched, last_error, source_type, source_subtype, metadata)' + 'VALUES (' + soup.title.string + ', ' + source + ', NULL, NULL, "news", NULL,NULL);'
         cur.execute(cmd)
         print "success!"
         exit()
