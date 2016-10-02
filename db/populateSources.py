@@ -22,3 +22,4 @@ for source in newspaper.popular_urls():
         exit()
     except:
         print "Error fetching ", source, "\n --> ", sys.exc_info()[0]
+        exit()
